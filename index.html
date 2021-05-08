@@ -1,0 +1,72 @@
+  
+<html>
+
+    <head>
+    
+    <title>
+    
+    MY FAMILY BOOK
+    
+    </title>
+    
+    </head>
+    
+    <body>
+    
+    <h1>MY FAMILY BOOK</h1>
+    
+    <h3 class="who"></h3>
+    
+    <img id="fam" src="https://images-na.ssl-images-amazon.com/images/I/61zTGIEvQoL.jpg" width="500" heght="500">
+    
+    <div id="display_name" style="font-weight: bold;"></div>
+    
+    <button id="next" onclick="NEXT()">NEXT</button>
+    
+    <script>
+    
+    var image=[
+        "https://www.google.com/url?sa=i&url=https%3A%2F%2Fcaillou.fandom.com%2Fwiki%2FDaddy&psig=AOvVaw0xt4Fy1XUDiYdabz8uKX4j&ust=1620580624774000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCPDOvbnLuvACFQAAAAAdAAAAABAE",
+      "https://www.google.com/url?sa=i&url=https%3A%2F%2Fhero.fandom.com%2Fwiki%2FDoris_(Caillou)&psig=AOvVaw3EMcTawf0w2njQ3kCcLAJC&ust=1620580670831000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCPCpuszLuvACFQAAAAAdAAAAABAD",
+      "https://www.google.com/imgres?imgurl=https%3A%2F%2Fyt3.ggpht.com%2Fytc%2FAAUvwni74n968DLcxsBMq6DDI1MApiOAnxWCxdcQgbW2dg%3Ds900-c-k-c0x00ffffff-no-rj&imgrefurl=https%3A%2F%2Fwww.youtube.com%2Fchannel%2FUC4yQCVlLhTmOqX5kUkAGr0g&tbnid=fAC-aCHqRPumeM&vet=12ahUKEwiui8TYy7rwAhVhoK0KHT3gDzsQMygAegUIARDPAQ..i&docid=uSjIlZbjEEr2FM&w=900&h=900&q=Caillou%27s%20&ved=2ahUKEwiui8TYy7rwAhVhoK0KHT3gDzsQMygAegUIARDPAQ",
+      "https://www.google.com/search?q=caillou%27s+cousin&sa=X&bih=1057&biw=1920&rlz=1C1CHBF_enCA910CA910&hl=en-GB&sxsrf=ALeKk00oV6swXQZ4lpXMoKacuiBqbx3eIQ:1620494325777&tbm=isch&source=iu&ictx=1&fir=SueNHwCSM2D1CM%252CDZJ0AWXf72DyLM%252C_&vet=1&usg=AI4_-kS9kTFZuQ2GSoCnotMfEzQJsUaupg&ved=2ahUKEwjPypfly7rwAhWAB50JHU6uCpwQ9QF6BAgZEAE#imgrc=SueNHwCSM2D1CM"
+    ]
+    
+    var n=[
+    "caillou's dad",
+    "caillou's mom",
+    "caillou",
+    "Sarah"
+    ]
+    
+    var i = 0; 
+    
+    var w = 0;
+    
+    function NEXT(){
+    
+      if(i == 4)
+    {
+      i= 0;
+    }
+    
+    if(w == 4)
+    {
+      w= 0;
+    }
+    
+       document.getElementById("fam").src = image[i];
+    
+       document.getElementById("display_name").src = n[w];
+    
+      i++;
+    
+      w++;
+    
+    }
+    
+    </script>
+    
+    </body>
+    
+    </html>
